@@ -16,19 +16,6 @@
         "env": []
     },
     {
-        "id": "7c21a6e13c77b38f",
-        "type": "openApi-red-url",
-        "name": "cap-aef-1",
-        "url": "openapi-default.json",
-        "urlType": "Files",
-        "server": "http://192.168.81.47:22020/openapi",
-        "serverType": "server",
-        "devMode": "",
-        "headers": [],
-        "useAuthCertificate": "",
-        "_version": "2.7.0"
-    },
-    {
         "id": "d34beaabc10a708c",
         "type": "mongodb",
         "hostname": "${MONGODB_HOST}",
@@ -43,6 +30,19 @@
         "type": "global-config",
         "name": "global-config",
         "env": []
+    },
+    {
+        "id": "a0f8af1e15d130ab",
+        "type": "openApi-red-url",
+        "name": "cap-aef",
+        "url": "openapi-default.json",
+        "urlType": "Files",
+        "server": "${CAPAEF_URL}",
+        "serverType": "server",
+        "devMode": "",
+        "headers": [],
+        "timestamp": 1750261025999,
+        "useAuthCertificate": ""
     },
     {
         "id": "d33d4a88e8138869",
@@ -173,12 +173,11 @@
         "type": "openApi-red",
         "z": "4b803cb8598ad03c",
         "name": "Send CUE",
-        "configUrlNode": "7c21a6e13c77b38f",
+        "configUrlNode": "a0f8af1e15d130ab",
         "apiTag": "gsmSCF to gsmSSF",
         "keepAuth": false,
         "operationData": {
             "id": "_continue",
-            "__originalOperationId": "_continue",
             "hasOperationId": true,
             "path": "/api/v1.2.1/cap/scf/call/{id}/continue",
             "method": "put"
@@ -371,12 +370,11 @@
         "type": "openApi-red",
         "z": "4b803cb8598ad03c",
         "name": "Send CON to RL",
-        "configUrlNode": "7c21a6e13c77b38f",
+        "configUrlNode": "a0f8af1e15d130ab",
         "apiTag": "gsmSCF to gsmSSF",
         "keepAuth": false,
         "operationData": {
             "id": "connect",
-            "__originalOperationId": "connect",
             "hasOperationId": true,
             "path": "/api/v1.2.1/cap/scf/call/{id}/connect",
             "method": "put"
@@ -757,9 +755,7 @@
             [
                 "64ca9fb831dc38fb"
             ],
-            [
-                "64ca9fb831dc38fb"
-            ]
+            []
         ]
     },
     {
@@ -870,12 +866,11 @@
         "type": "openApi-red",
         "z": "4b803cb8598ad03c",
         "name": "Send CON to PCL",
-        "configUrlNode": "7c21a6e13c77b38f",
+        "configUrlNode": "a0f8af1e15d130ab",
         "apiTag": "gsmSCF to gsmSSF",
         "keepAuth": false,
         "operationData": {
             "id": "connect",
-            "__originalOperationId": "connect",
             "hasOperationId": true,
             "path": "/api/v1.2.1/cap/scf/call/{id}/connect",
             "method": "put"
