@@ -8,14 +8,6 @@
         "env": []
     },
     {
-        "id": "12e93f2caa1e7f7b",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "d34beaabc10a708c",
         "type": "mongodb",
         "hostname": "${MONGODB_HOST}",
